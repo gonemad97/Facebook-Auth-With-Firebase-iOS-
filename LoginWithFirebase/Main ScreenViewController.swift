@@ -19,7 +19,11 @@ class Main_ScreenViewController: UIViewController {
     @IBOutlet weak var result: UILabel!
 
     @IBAction func generateQuote(_ sender: Any) {
-        let quotes = ["The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart. - Helen Keller", "Beauty in art is often nothing but ugliness subdued. - Jean Rostand","A bank is a place that will lend you money if you can prove that you don't need it. - Bob Hope","Enjoy the journey and try to get better every day. And don't lose the passion and the love for what you do. - Nadia Comaneci","Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine. - Jack Ma"]
+        let quotes = ["The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart. - Helen Keller", 
+                      "Beauty in art is often nothing but ugliness subdued. - Jean Rostand",
+                      "A bank is a place that will lend you money if you can prove that you don't need it. - Bob Hope",
+                      "Enjoy the journey and try to get better every day. And don't lose the passion and the love for what you do. - Nadia Comaneci",
+                      "Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine. - Jack Ma"]
         
         let randomQuote = quotes.randomElement()!
         result.text = randomQuote
